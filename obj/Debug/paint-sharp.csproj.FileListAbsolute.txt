@@ -1,0 +1,10 @@
+C:\Users\beriy\source\repos\paint-sharp\bin\Debug\paint-sharp.exe.config
+C:\Users\beriy\source\repos\paint-sharp\bin\Debug\paint-sharp.exe
+C:\Users\beriy\source\repos\paint-sharp\bin\Debug\paint-sharp.pdb
+C:\Users\beriy\source\repos\paint-sharp\obj\Debug\paint_sharp.Form1.resources
+C:\Users\beriy\source\repos\paint-sharp\obj\Debug\paint_sharp.Properties.Resources.resources
+C:\Users\beriy\source\repos\paint-sharp\obj\Debug\paint-sharp.csproj.GenerateResource.cache
+C:\Users\beriy\source\repos\paint-sharp\obj\Debug\paint-sharp.csproj.CoreCompileInputs.cache
+C:\Users\beriy\source\repos\paint-sharp\obj\Debug\paint-sharp.exe
+C:\Users\beriy\source\repos\paint-sharp\obj\Debug\paint-sharp.pdb
+C:\Users\beriy\source\repos\paint-sharp\obj\Debug\paint-sharp.csprojAssemblyReference.cache
