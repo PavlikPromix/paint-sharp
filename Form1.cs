@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Drawing;
 using System.IO;
+using System.Text;
 using System.Windows.Forms;
 
 namespace paint_sharp
@@ -19,6 +20,7 @@ namespace paint_sharp
         Point[] pts;
         List<Point[]> fpts = new List<Point[]> { };
         string[] data;
+        string tempdata;
         bool painting = true;
 
         public Form1()
@@ -144,6 +146,7 @@ namespace paint_sharp
                 }
                 File.AppendAllText(saveFileDialog1.FileName, "\n");
             }
+            File.WriteAllText(saveFileDialog1.FileName, Convert.ToBase64String(Encoding.UTF8.GetBytes(File.ReadAllText(saveFileDialog1.FileName))));
         }
 
         private void openToolStripMenuItem_Click(object sender, EventArgs e)
@@ -153,7 +156,10 @@ namespace paint_sharp
             g.Clear(Color.White);
             fpts = new List<Point[]> { };
             filleddata = new List<bool> { };
+            tempdata = File.ReadAllText(openFileDialog1.FileName);
+            File.WriteAllText(openFileDialog1.FileName, Encoding.UTF8.GetString(Convert.FromBase64String(tempdata)));
             data = File.ReadAllLines(openFileDialog1.FileName);
+            File.WriteAllText(saveFileDialog1.FileName, tempdata);
             List<Point> heap = new List<Point> { };
             foreach (var item in data)
             {
